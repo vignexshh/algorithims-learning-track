@@ -8,7 +8,6 @@ def lengthOfLongestSubstring(s: str) -> int:
 
     for right in range(len(s)):
         if s[right] in char_map:
-            # Move left pointer to the right of the last seen duplicate
             left = max(left, char_map[s[right]] + 1)
 
         char_map[s[right]] = right
@@ -19,3 +18,4 @@ def lengthOfLongestSubstring(s: str) -> int:
 
 print(lengthOfLongestSubstring('pwwkew'))
 
+#0,1,2,3 -> right(2) - left(1) + 1
