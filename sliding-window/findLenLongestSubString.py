@@ -1,4 +1,7 @@
 def lengthOfLongestSubstring(s: str) -> int:
+    """
+    char_map is a dictionary used to track elements and their last index position.
+    """
     char_map = {}
     left = 0
     max_length = 0
@@ -15,3 +18,4 @@ def lengthOfLongestSubstring(s: str) -> int:
 
 
 print(lengthOfLongestSubstring('pwwkew'))
+
