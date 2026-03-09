@@ -8,7 +8,7 @@ def findSubString(s, words):
     while right != len(s):
         if s[right:wordlen] in clone:
             clone.remove(s[right:wordlen])
-        if not clone:
+        if s[right:wordlen] not in clone:
             index = wordlen - right
             pass
 
